@@ -48,7 +48,7 @@ You will be able to run the server by using `python server.py`.
 
 Accessing the `http://127.0.0.1:5000/` on your navigator, you'll see somthing like this:
 
-TODO: <image>
+<img width="332" alt="Screen Shot 2021-12-14 at 10 45 11" src="https://user-images.githubusercontent.com/22433243/146011158-49ad5c5e-056d-4485-bbf8-7c28bef25b51.png">
 
 ### Sender (Local)
 
@@ -61,7 +61,7 @@ You will be able to send a webhook request locally to the server above running t
 Success
 ```
 
-If you do so, the terminal with the server.py script running will return the JSON he received:
+If you do so, the terminal with the `server.py` script running will return the JSON it received:
 
 ```shell
 ➜  python server.py
