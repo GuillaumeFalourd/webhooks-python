@@ -1,6 +1,6 @@
 # webhooks-python
 
-[![Call webhook remote](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml/badge.svg)](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml)
+[![Security Pipeline](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/security-pipeline.yaml/badge.svg)](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/security-pipeline.yaml) [![Call webhook remote](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml/badge.svg)](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml)
 
 POC of sending and receiving webhooks in Python 🐍
 
@@ -22,6 +22,8 @@ pip install -r requirements.txt
 ### 📤 Sender (Remote)
 
 You will be able to send a webhook request remotely running the `webhook_remote.py` file by using `python webhook_remote.py`.
+
+[Check the request output here](https://webhook.site/#!/61a89a13-0f6d-4116-ae4d-95e4854683b3/c7169b86-9405-4dd9-9233-a87a19007210/1)
 
 _Note: You can update the webhook online url on the `webhook_remote.py` file by creating your own for free on the [Webhook site](https://webhook.site/)._
 
