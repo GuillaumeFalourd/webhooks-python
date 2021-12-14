@@ -15,15 +15,60 @@ First, if you don't have the dependencies installed on your computer, run:
 pip install -r requirements.txt
 ```
 
-Then, you will be able to run the `webhook.py` file by using `python webhook.py`.
+### Sender (Remote)
 
-_Note: You can update the webhook online url on the `webhook.py` file by creating your own for free on the [Webhook site](https://webhook.site/)._
+You will be able to send a webhook request remotely running the `webhook_remote.py` file by using `python webhook_remote.py`.
 
-## Demo
+_Note: You can update the webhook online url on the `webhook_remote.py` file by creating your own for free on the [Webhook site](https://webhook.site/)._
 
-**Sending requests:**
+#### Demo Sender (Remote)
 
 ```shell
-➜ python3 webhook.py
+➜ python webhook_remote.py
 Success
+```
+
+### Receiver
+
+You will be able to run the server by using `python server.py`.
+
+#### Demo Receiver
+
+```shell
+➜  python server.py
+ * Serving Flask app 'server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+Accessing the `http://127.0.0.1:5000/` on your navigator, you'll see somthing like this:
+
+TODO: <image>
+
+### Sender (Local)
+
+You will be able to send a webhook request locally to the server above running the `webhook_local.py` file by using `python webhook_local.py` (on another terminal than the one where the `server.py` script is running).
+
+#### Demo Sender (Local)
+
+```shell
+➜ python webhook_local.py
+Success
+```
+
+If you do so, the terminal with the server.py script running will return the JSON he received:
+
+```shell
+➜  python server.py
+ * Serving Flask app 'server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+{'name': 'Guillaume', 'phone': '+553499999-9999', 'email': 'guillaume@test.com'}
+127.0.0.1 - - [14/Dec/2021 10:48:06] "POST /webhook HTTP/1.1" 200 -
 ```
