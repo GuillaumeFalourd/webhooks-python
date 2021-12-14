@@ -1,5 +1,7 @@
 # webhooks-python
 
+[![Call webhook remote](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml/badge.svg)](https://github.com/GuillaumeFalourd/webhooks-python/actions/workflows/webhook_remote.yaml)
+
 POC of sending and receiving webhooks in Python 🐍
 
 ## References
