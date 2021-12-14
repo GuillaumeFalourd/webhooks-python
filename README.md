@@ -15,7 +15,9 @@ First, if you don't have the dependencies installed on your computer, run:
 pip install -r requirements.txt
 ```
 
-### Sender (Remote)
+* * *
+
+### 📤 Sender (Remote)
 
 You will be able to send a webhook request remotely running the `webhook_remote.py` file by using `python webhook_remote.py`.
 
@@ -30,7 +32,9 @@ Success
 
 <img width="1427" alt="Screen Shot 2021-12-14 at 10 31 24" src="https://user-images.githubusercontent.com/22433243/146008397-addda76d-98fe-4042-ad9a-396eed500cac.png">
 
-### Receiver
+* * *
+
+### 📥 Receiver
 
 You will be able to run the server by using `python server.py`.
 
@@ -50,7 +54,9 @@ Accessing the `http://127.0.0.1:5000/` on your navigator, you'll see somthing li
 
 <img width="332" alt="Screen Shot 2021-12-14 at 10 45 11" src="https://user-images.githubusercontent.com/22433243/146011158-49ad5c5e-056d-4485-bbf8-7c28bef25b51.png">
 
-### Sender (Local)
+* * *
+
+### 📤 Sender (Local)
 
 You will be able to send a webhook request locally to the server above running the `webhook_local.py` file by using `python webhook_local.py` (on another terminal than the one where the `server.py` script is running).
 
